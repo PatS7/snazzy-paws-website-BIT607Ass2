@@ -2,17 +2,15 @@
 <html lang="en">
   <head>
     <!-- Basic head information -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book at Snazzy Paws Grooming</title>
     <link rel="stylesheet" href="styles/styles.min.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
     <!-- HEADER SECTION: Logo and navigation menu -->
-    <header class="navbar" role="banner">
+    <header class="navbar">
       <div class="logo">Snazzy Paws</div>
       <div class="menu-toggle" id="menu-toggle" role="button" aria-label="Toggle navigation menu">
         &#9776;
@@ -37,7 +35,7 @@
       </div>
     </section>
 
-    <hr class="section-divider" />
+    <hr class="section-divider">
 
     <!-- BOOKING SECTION: Service selection and booking summary -->
     <section class="booking">
@@ -48,104 +46,89 @@
         <div class="service-selection">
           <!-- Grooming Essentials Dropdown -->
           <div class="dropdown">
-            <input
-              type="checkbox"
-              id="essentials"
-              class="dropdown-toggle"
-              aria-label="Grooming Essentials Options dropdown"
-            />
+            <input type="checkbox" id="essentials" class="dropdown-toggle" aria-label="Grooming Essentials Options dropdown">
             <label for="essentials" class="dropdown-label">Grooming Essentials</label>
             <div class="dropdown-content">
               <label>
                 <input type="checkbox" name="service" value="Bath and Brush">
                 <span class="service-name">Bath and Brush</span> - $20-$50 (45mins)
-                <p>Shampoo, blow-dry, brush-out, and nail trim.</p>
+                <span>Shampoo, blow-dry, brush-out, and nail trim.</span>
               </label>
-              <label></label>
+              <label>
                 <input type="checkbox" name="service" value="Nail Trim">
                 <span class="service-name">Nail Trim</span> - $10-$20 (15mins)
-                <p>Trim nails and, in some cases, filing.</p>
+                <span>Trim nails and, in some cases, filing.</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Ear Cleaning">
                 <span class="service-name">Ear Cleaning</span> - $10-$15 (15mins)
-                <p>Gentle cleaning of ears to remove wax and debris.</p>
+                <span>Gentle cleaning of ears to remove wax and debris.</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Teeth Brushing">
                 <span class="service-name">Teeth Brushing</span> - $10-$15 (15mins)
-                <p>Shampoo, blow-dry, brush-out, and nail trim.</p>
+                <span>Shampoo, blow-dry, brush-out, and nail trim.</span>
               </label>
             </div>
           </div>
 
           <!-- Grooming Packages Dropdown -->
           <div class="dropdown">
-            <input
-              type="checkbox"
-              id="specialty"
-              class="dropdown-toggle"
-              aria-label="Grooming Package Options dropdown"
-            />
+            <input type="checkbox" id="specialty" class="dropdown-toggle" aria-label="Grooming Package Options dropdown">
             <label for="specialty" class="dropdown-label">Grooming Packages</label>
             <div class="dropdown-content">
               <label>
                 <input type="checkbox" name="service" value="Spa Package">
                 <span class="service-name">Spa Package</span> - $75-$150 (90mins)
-                <p>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</p>
+                <span>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Express Service">
                 <span class="service-name">Express Service</span> - $15-$25 (25mins)
-                <p>Service description Service description Service description</p>
+                <span>Service description Service description Service description</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Puppy Package">
                 <span class="service-name">Puppy Package</span> - $30-$60 (45mins)
-                <p>Introductory grooming services tailored for puppies</p>
+                <span>Introductory grooming services tailored for puppies</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Senior Dog Package">
                 <span class="service-name">Senior Dog Package</span> - $40-$80 (60mins)
-                <p>Introductory grooming services tailored for puppies</p>
+                <span>Introductory grooming services tailored for puppies</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Full Grooming Package">
                 <span class="service-name">Full Grooming Package</span> - $60-$120 (90mins)
-                <p>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</p>
+                <span>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</span>
               </label>
             </div>
           </div>
 
           <!-- Specialty Treatments Dropdown -->
           <div class="dropdown">
-            <input
-              type="checkbox"
-              id="services"
-              class="dropdown-toggle"
-              aria-label="Specialty Treatments Options dropdown"
-            />
+            <input type="checkbox" id="services" class="dropdown-toggle" aria-label="Specialty Treatments Options dropdown">
             <label for="services" class="dropdown-label">Specialty Treatments</label>
             <div class="dropdown-content">
               <label>
                 <input type="checkbox" name="service" value="De-shedding Treatment">
                 <span class="service-name">De-Shedding Treatment</span> - $20-$40 (30mins)
-                <p>Special shampoo and undercoat removal. This is in addition to a bath or haircut.</p>
+                <span>Special shampoo and undercoat removal. This is in addition to a bath or haircut.</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Flea and Tick Treatment">
                 <span class="service-name">Flea and Tick Treatment</span> - $15-$30 (30mins)
-                <p>Shampoo and preventative treatment.</p>
+                <span>Shampoo and preventative treatment.</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Medicated Bath">
                 <span class="service-name">Medicated Bath</span> - $20-$40 (40mins)
-                <p>For pets with skin conditions requiring special shampoo. Additional to standard bath.</p>
+                <span>For pets with skin conditions requiring special shampoo. Additional to standard bath.</span>
               </label>
               <label>
                 <input type="checkbox" name="service" value="Special-Breed Cut">
                 <span class="service-name">Special-Breed Cut</span> - Varied Pricing (60mins-120mins)
-                <p>Breed-specific cuts or styling based on customer preference. Please contact the salon for consultation and a quote prior to booking.</p>
+                <span>Breed-specific cuts or styling based on customer preference. Please contact the salon for consultation and a quote prior to booking.</span>
               </label>
             </div>
           </div>
@@ -168,7 +151,7 @@
               <button class="remove-item" aria-label="Remove Service">X</button>
             </li>
           </ul>
-          <hr />
+          <hr>
           <p>Total Cost: <span id="total-cost">$125</span></p>
           <p>Total Duration: <span id="total-duration">1 hr 10 mins</span></p>
           <button class="btn-primary">Clear Booking</button>
@@ -176,7 +159,7 @@
       </div>
     </section>
 
-    <hr class="section-divider" />
+    <hr class="section-divider">
 
     <!-- DATE & TIME SECTION: Allows the user to pick a date and time -->
     <section class="date-time">
@@ -199,7 +182,7 @@
           <h3>Available Times:</h3>
           <div class="time-options">
             <label>
-              <input type="radio" name="time" value="10:00 AM"/>
+              <input type="radio" name="time" value="10:00 AM">
               10:00 AM
             </label>
             <label>
@@ -235,7 +218,7 @@
       </div>
     </section>
 
-    <hr class="section-divider" />
+    <hr class="section-divider">
 
     <!-- CONFIRM DETAILS SECTION: Form for entering booking details -->
     <section class="confirm-details">
@@ -295,7 +278,7 @@
     </section>
 
     <!-- FOOTER SECTION: Contains contact info and business hours -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
       <div class="footer-left">
         <p>Snazzy Paws Grooming</p>
         <div class="social-icons">
