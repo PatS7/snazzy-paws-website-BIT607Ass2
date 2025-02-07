@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic head information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book at Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles/styles.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION: Logo and navigation menu -->
+    <header class="navbar" role="banner">
+      <div class="logo">Snazzy Paws</div>
+      <div class="menu-toggle" id="menu-toggle" role="button" aria-label="Toggle navigation menu">
+        &#9776;
+      </div>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="bookings.html">Book</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION: Booking page header with image -->
+    <section class="hero hero-bookings">
+      <div class="hero-left">
+        <h1>Book In at Snazzy Paws Grooming</h1>
+        <a href="services.html" class="btn-primary">Our Services</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/booking/booking-hero.jpg" alt="ungroomed-shaggy-black-dog" />
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- BOOKING SECTION: Service selection and booking summary -->
+    <section class="booking">
+      <h2>Choose Your Service(s)</h2>
+      <p>Click on the categories below to view and select your required services.</p>
+      <div class="service-container">
+        <!-- LEFT SIDE: Dropdowns for selecting services -->
+        <div class="service-selection">
+          <!-- Grooming Essentials Dropdown -->
+          <div class="dropdown">
+            <input
+              type="checkbox"
+              id="essentials"
+              class="dropdown-toggle"
+              aria-label="Grooming Essentials Options dropdown"
+            />
+            <label for="essentials" class="dropdown-label">Grooming Essentials</label>
+            <div class="dropdown-content">
+              <label>
+                <input type="checkbox" name="service" value="Bath and Brush" />
+                <span class="service-name">Bath and Brush</span> - $20-$50 (45mins)
+                <p>Shampoo, blow-dry, brush-out, and nail trim.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Nail Trim" />
+                <span class="service-name">Nail Trim</span> - $10-$20 (15mins)
+                <p>Trim nails and, in some cases, filing.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Ear Cleaning" />
+                <span class="service-name">Ear Cleaning</span> - $10-$15 (15mins)
+                <p>Gentle cleaning of ears to remove wax and debris.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Teeth Brushing" />
+                <span class="service-name">Teeth Brushing</span> - $10-$15 (15mins)
+                <p>Shampoo, blow-dry, brush-out, and nail trim.</p>
+              </label>
+            </div>
+          </div>
+
+          <!-- Grooming Packages Dropdown -->
+          <div class="dropdown">
+            <input
+              type="checkbox"
+              id="specialty"
+              class="dropdown-toggle"
+              aria-label="Grooming Package Options dropdown"
+            />
+            <label for="specialty" class="dropdown-label">Grooming Packages</label>
+            <div class="dropdown-content">
+              <label>
+                <input type="checkbox" name="service" value="Spa Package" />
+                <span class="service-name">Spa Package</span> - $75-$150 (90mins)
+                <p>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Express Service" />
+                <span class="service-name">Express Service</span> - $15-$25 (25mins)
+                <p>Service description Service description Service description</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Puppy Package" />
+                <span class="service-name">Puppy Package</span> - $30-$60 (45mins)
+                <p>Introductory grooming services tailored for puppies</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Senior Dog Package" />
+                <span class="service-name">Senior Dog Package</span> - $40-$80 (60mins)
+                <p>Introductory grooming services tailored for puppies</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Full Grooming Package" />
+                <span class="service-name">Full Grooming Package</span> - $60-$120 (90mins)
+                <p>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</p>
+              </label>
+            </div>
+          </div>
+
+          <!-- Specialty Treatments Dropdown -->
+          <div class="dropdown">
+            <input
+              type="checkbox"
+              id="services"
+              class="dropdown-toggle"
+              aria-label="Specialty Treatments Options dropdown"
+            />
+            <label for="services" class="dropdown-label">Specialty Treatments</label>
+            <div class="dropdown-content">
+              <label>
+                <input type="checkbox" name="service" value="De-shedding Treatment" />
+                <span class="service-name">De-Shedding Treatment</span> - $20-$40 (30mins)
+                <p>Special shampoo and undercoat removal. This is in addition to a bath or haircut.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Flea and Tick Treatment" />
+                <span class="service-name">Flea and Tick Treatment</span> - $15-$30 (30mins)
+                <p>Shampoo and preventative treatment.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Medicated Bath" />
+                <span class="service-name">Medicated Bath</span> - $20-$40 (40mins)
+                <p>For pets with skin conditions requiring special shampoo. Additional to standard bath.</p>
+              </label>
+              <label>
+                <input type="checkbox" name="service" value="Special-Breed Cut" />
+                <span class="service-name">Special-Breed Cut</span> - Varied Pricing (60mins-120mins)
+                <p>Breed-specific cuts or styling based on customer preference. Please contact the salon for consultation and a quote prior to booking.</p>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: Booking summary details -->
+        <aside class="your-booking">
+          <h3>Your Booking:</h3>
+          <ul id="booking-summary">
+            <li>
+              <span>🐾 Service Name</span>
+              <span>$$$</span>
+              <span>1 hr</span>
+              <button class="remove-item" aria-label="Remove Service">X</button>
+            </li>
+            <li>
+              <span>🐾 Service Name</span>
+              <span>$$$</span>
+              <span>10 min</span>
+              <button class="remove-item" aria-label="Remove Service">X</button>
+            </li>
+          </ul>
+          <hr />
+          <p>Total Cost: <span id="total-cost">$125</span></p>
+          <p>Total Duration: <span id="total-duration">1 hr 10 mins</span></p>
+          <button class="btn-primary">Clear Booking</button>
+        </aside>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- DATE & TIME SECTION: Allows the user to pick a date and time -->
+    <section class="date-time">
+      <h2>Select Date & Time</h2>
+      <div class="date-time-container">
+        <!-- LEFT: Calendar Picker -->
+        <div class="calendar-picker">
+          <div class="calendar-header">
+            <button class="nav-button" aria-label="Previous Month">❮</button>
+            <span>Month | Year</span>
+            <button class="nav-button" aria-label="Next Month">❯</button>
+          </div>
+          <div class="calendar">
+            <p>Calendar</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Time Picker -->
+        <div class="time-picker">
+          <h3>Available Times:</h3>
+          <div class="time-options">
+            <label>
+              <input type="radio" name="time" value="10:00 AM" />
+              10:00 AM
+            </label>
+            <label>
+              <input type="radio" name="time" value="10:15 AM" />
+              10:15 AM
+            </label>
+            <label>
+              <input type="radio" name="time" value="10:30 AM" />
+              10:30 AM
+            </label>
+            <label>
+              <input type="radio" name="time" value="12:00 PM" />
+              12:00 PM
+            </label>
+            <label>
+              <input type="radio" name="time" value="1:15 PM" />
+              1:15 PM
+            </label>
+            <label>
+              <input type="radio" name="time" value="1:45 PM" />
+              1:45 PM
+            </label>
+            <label>
+              <input type="radio" name="time" value="3:15 PM" />
+              3:15 PM
+            </label>
+            <label>
+              <input type="radio" name="time" value="3:30 PM" />
+              3:30 PM
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- CONFIRM DETAILS SECTION: Form for entering booking details -->
+    <section class="confirm-details">
+      <h2>Enter Your Details & Confirm</h2>
+      <div class="details-container">
+        <!-- LEFT: Owner and pet details -->
+        <div class="details-form">
+          <div class="form-group">
+            <label for="pet-name">Pet name:</label>
+            <input type="text" id="pet-name" placeholder="Enter pet name" />
+          </div>
+          <div class="form-group">
+            <label for="owner-name">Owner name:</label>
+            <input type="text" id="owner-name" placeholder="Enter owner name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Owner email:</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Owner phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" />
+          </div>
+        </div>
+        <!-- RIGHT: Additional pet information -->
+        <div class="additional-notes">
+          <div class="form-group">
+            <label for="pet-age">Pet Age:</label>
+            <input type="text" id="pet-age" placeholder="Your pet's age" />
+          </div>
+          <div class="form-group">
+            <label for="pet-breed">Pet Breed:</label>
+            <input type="text" id="pet-breed" placeholder="Your pet's breed" />
+          </div>
+          <label for="notes">
+            Is there anything we should know about your pet? e.g. allergies, scared
+            of hairdryer
+          </label>
+          <textarea id="notes" placeholder="Additional information about your pet"></textarea>
+        </div>
+      </div>
+
+      <!-- APPOINTMENT SUMMARY: Displays the chosen services and appointment details -->
+      <div class="appointment-summary">
+        <h3>The appointment you’re booking is for:</h3>
+        <ul>
+          <li><span>🐾 Service name</span></li>
+          <li><span>🐾 Service name</span></li>
+        </ul>
+        <p>at 10.00am on the 3rd of July 2025</p>
+        <button class="btn-primary">Confirm</button>
+        <p class="cancellation-policy">
+          Cancellation Policy Cancellation Policy Cancellation Policy <br />
+          By confirming the appointment you are agreeing to these terms.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION: Contains contact info and business hours -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-left">
+        <p>Snazzy Paws Grooming</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Twitter link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <p>Phone: 0800 SNAZZY PAWS</p>
+        <p>Email: info@snazzypaws.com</p>
+      </div>
+      <div class="footer-right">
+        <p>Open: Monday - Saturday | 9am - 5pm</p>
+        <p>Closed: Sundays</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT SECTION: Handles mobile menu toggle -->
+    <script>
+      // Toggle the navigation menu when the hamburger icon is clicked
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

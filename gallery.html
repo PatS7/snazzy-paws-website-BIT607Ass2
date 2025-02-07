@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic head info and meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles/styles.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION: Site logo and navigation menu -->
+    <header class="navbar" role="banner">
+      <div class="logo">Snazzy Paws</div>
+      <div
+        class="menu-toggle"
+        id="menu-toggle"
+        role="button"
+        aria-label="Toggle navigation menu"
+      >
+        &#9776;
+      </div>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="bookings.html">Book</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION: Header area for the Gallery page -->
+    <section class="hero hero-gallery">
+      <div class="hero-left">
+        <h1>Snazzy Paws Grooming Gallery</h1>
+        <a href="bookings.html" class="btn-primary">Book Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/gallery/gallery-hero.jpg" alt="woman-with-white-groomed-dog-yellow-background" />
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- OUR WORK SECTION: A slideshow of our grooming work/testimonials -->
+    <section class="happy-customers">
+      <h2 class="section-title">Our Work</h2>
+      <p>
+        Snazzy Paws Grooming: We take pride in delivering top-quality grooming
+        services that leave pets looking and feeling their best.
+      </p>
+      <div class="slideshow-container">
+        <div class="slide">
+          <div class="before-after">
+            <div class="before">
+              <h4>Before</h4>
+              <img
+                src="./images/gallery/Pre_Groom1.jpg"
+                alt="Shaggy White and Grey Dog Pre Groom"
+              />
+            </div>
+            <div class="after">
+              <h4>After</h4>
+              <img
+                src="./images/gallery/Post_Groom1.jpg"
+                alt="White and Grey Dog Post Groom"
+              />
+            </div>
+          </div>
+          <blockquote>"Best grooming service ever!"</blockquote>
+          <p>– Bella</p>
+        </div>
+
+        <div class="slide">
+          <div class="before-after">
+            <div class="before">
+              <h4>Before</h4>
+              <img
+                src="./images/gallery/Pre_Groom3.jpg"
+                alt="Salt and Pepper Shaggy Puppy Pre Groom"
+              />
+            </div>
+            <div class="after">
+              <h4>After</h4>
+              <img
+                src="./images/gallery/Post_Groom3.jpg"
+                alt="Salt and Pepper Shaggy Puppy Post Groom"
+              />
+            </div>
+          </div>
+          <blockquote>"Fantastic service and friendly staff!"</blockquote>
+          <p>– Max</p>
+        </div>
+
+        <div class="slide">
+          <div class="before-after">
+            <div class="before">
+              <h4>Before</h4>
+              <img
+                src="./images/gallery/Pre_Groom4.jpg"
+                alt="Shaggy White Dog Pre Groom"
+              />
+            </div>
+            <div class="after">
+              <h4>After</h4>
+              <img
+                src="./images/gallery/Post_Groom4.jpg"
+                alt="White Dog Post Specialty Groom"
+              />
+            </div>
+          </div>
+          <blockquote>"My dog has never looked better!"</blockquote>
+          <p>– Charlie</p>
+        </div>
+
+        <!-- Slideshow Navigation Buttons -->
+        <button
+          class="btn-slide prev"
+          onclick="moveSlide(-1)"
+          aria-label="Previous Slide"
+        >
+          ❮
+        </button>
+        <button
+          class="btn-slide next"
+          onclick="moveSlide(1)"
+          aria-label="Next Slide"
+        >
+          ❯
+        </button>
+      </div>
+
+      <!-- Dots for the slideshow navigation -->
+      <div class="dots-container" aria-label="Slideshow Dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- OUR PLACE SECTION: A grid of images showing the salon environment -->
+    <section class="services">
+      <h2>Us in Action</h2>
+      <p>
+        Take a look around to discover our welcoming pet-friendly salon designed
+        for comfort, cleanliness, and a stress-free grooming experience.
+      </p>
+      <div class="our-place-grid">
+        <div class="grid-item">
+          <img src="./images/homepage/Storefront_home.jpg" alt="Front of Salon" />
+          <p>Front of Salon</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/outdoor-exercise-area.jpg"
+            alt="Outdoor Exercise Area"
+          />
+          <p>Outdoor Exercise Area</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/indoor-play-area.jpg"
+            alt="Indoor Play Area"
+          />
+          <p>Indoor Play Area</p>
+        </div>
+        <div class="grid-item">
+          <img src="./images/gallery/waiting-area.jpg" alt="Waiting Area" />
+          <p>Waiting Area</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/Dog_in_bath1.jpg"
+            alt="Bathing Station 1"
+          />
+          <p>Bathing Station 1</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/Dog_in_bath2.jpg"
+            alt="Bathing Station 2"
+          />
+          <p>Bathing Station 2</p>
+        </div>
+        <div class="grid-item">
+          <img src="./images/gallery/Dog_nail_trim.jpg" alt="Dog Nail Trim" />
+          <p>Dog Nail Trim</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/Dog_being_brushed.jpg"
+            alt="Dog Brushing"
+          />
+          <p>Dog Brushing</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/Dog_being_groomed1.jpg"
+            alt="Terrier Grooming"
+          />
+          <p>Terrier Grooming</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/Dog_being_groomed2.jpg"
+            alt="Shih Tzu Grooming"
+          />
+          <p>Shih Tzu Grooming</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/Dog_being_groomed_9.jpg"
+            alt="Poodle Grooming"
+          />
+          <p>Poodle Grooming</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/dog_being_groomed10.jpg"
+            alt="Large Dog Grooming"
+          />
+          <p>Large Dog Grooming</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/dog-being-groomed-12.jpg"
+            alt="Dog Nose Grooming"
+          />
+          <p>Nose Grooming</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/dog-being-groomed13.jpg"
+            alt="Pomeranian Grooming"
+          />
+          <p>Pomeranian Grooming</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/dog-teeth-check.jpg"
+            alt="Dog Teeth Check"
+          />
+          <p>Teeth Check</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./images/gallery/grooming_tools.jpg"
+            alt="Grooming Tools"
+          />
+          <p>Tools of the Trade</p>
+        </div>
+      </div>
+      <a href="contact.html" class="btn-primary">Contact Us</a>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- VIDEO SECTION: Displays a video of a grooming session -->
+    <section class="services">
+      <h2>Our Work</h2>
+      <p>Watch Bella get treated to a spa package.</p>
+      <div class="video-container">
+        <iframe
+          width="80%"
+          height="500px"
+          src="https://www.youtube.com/embed/YpzjiS5M8V0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="Bella Spa Package"
+        ></iframe>
+      </div>
+      <a href="services.html" class="btn-primary">See our services</a>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- OUR PEOPLE SECTION: Introduces the team members -->
+    <section class="services">
+      <h2>Our People</h2>
+      <p>
+        Meet the Team: Dedicated, experienced, and passionate about your pet's
+        well-being. Our groomers are here to make every visit special.
+      </p>
+      <div class="our-people-grid">
+        <div>
+          <img
+            src="./images/gallery/Gallery_Employee_1.jpg"
+            alt="Worker One"
+          />
+          <h3>Sarah</h3>
+          <p>Lead Groomer</p>
+          <p>Expert in pet grooming with 10+ years of experience.</p>
+        </div>
+        <div>
+          <img
+            src="./images/gallery/Gallery_Employee_2.jpg"
+            alt="Worker Two"
+          />
+          <h3>Brylie</h3>
+          <p>Assistant Groomer</p>
+          <p>Passionate about making pets feel loved and pampered.</p>
+        </div>
+        <div>
+          <img
+            src="./images/gallery/Gallery_Employee_3.jpg"
+            alt="Worker Three"
+          />
+          <h3>Ashley</h3>
+          <p>Stylist</p>
+          <p>Specializes in breed-specific cuts and creative styles.</p>
+        </div>
+        <div>
+          <img
+            src="./images/gallery/Gallery_Employee_4.jpg"
+            alt="Worker Four"
+          />
+          <h3>Sam</h3>
+          <p>Grooming Assistant</p>
+          <p>Ensures every pet enjoys a relaxing and stress-free experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION: Business contact details and social media links -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-left">
+        <p>Snazzy Paws Grooming</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Twitter link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <p>Phone: 0800 SNAZZY PAWS</p>
+        <p>Email: info@snazzypaws.com</p>
+      </div>
+      <div class="footer-right">
+        <p>Open: Monday - Saturday | 9am - 5pm</p>
+        <p>Closed: Sundays</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT SECTION: Handles the mobile menu toggle and slideshow functionality -->
+    <script>
+      // Toggle the navigation menu when the hamburger icon is clicked
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Slideshow functionality: shows slides and updates dot navigation
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+
+      // Function to display the slide for the given index
+      function showSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === currentIndex);
+          dots[i].classList.toggle("active", i === currentIndex);
+        });
+      }
+
+      // Function to move to the next or previous slide
+      function moveSlide(step) {
+        showSlide(currentIndex + step);
+      }
+
+      // Function to jump to a specific slide when a dot is clicked
+      function currentSlide(index) {
+        showSlide(index - 1);
+      }
+
+      // Initialize the slideshow when the page is fully loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlide(currentIndex);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic head info and meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles/styles.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+ 
+  </head>
+  <body>
+    <!-- HEADER SECTION: Site logo and navigation menu -->
+    <header class="navbar" role="banner">
+      <div class="logo">Snazzy Paws</div>
+      <div
+        class="menu-toggle"
+        id="menu-toggle"
+        role="button"
+        aria-label="Toggle navigation menu"
+      >
+        &#9776;
+      </div>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="bookings.html">Book</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION: Contact page header with a background image -->
+    <section class="hero hero-contact">
+      <div class="hero-left">
+        <h1>Contact Us<br />Snazzy Paws Grooming</h1>
+      </div>
+      <div class="hero-image">
+        <img src="./images/contact/contact-hero.jpg" alt="groomed-black-puppies-blue-background" />
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- CONTACT FORM SECTION: Simple form for users to send a message -->
+    <section class="contact-form">
+      <h2>Have a Question?</h2>
+      <p>Fill in the form below. We'd love to hear from you!</p>
+      <form action="#" method="POST" aria-label="Contact Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- MAP & DETAILS SECTION: Displays a Google Map and opening hours -->
+    <section class="details">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6918520.250166088!2d143.99378781899563!3d-32.1453404762389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2snz!4v1738570013478!5m2!1sen!2snz"
+          width="400"
+          height="300"
+          style="border:0;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map - Snazzy Paws Grooming"
+        ></iframe>
+      </div>
+      <div class="contact-info">
+        <h3>Opening Hours:</h3>
+        <p>Monday: 9am - 5pm</p>
+        <p>Tuesday: 9am - 5pm</p>
+        <p>Wednesday: 9am - 5pm</p>
+        <p>Thursday: 9am - 5pm</p>
+        <p>Friday: 9am - 5pm</p>
+        <p>Saturday: 9am - 5pm</p>
+        <p>Sunday: CLOSED</p>
+        <p>Phone: 0800 SNAZZYPAWS</p>
+        <p>Email: info@snazzypaws.com</p>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION: Business details and social media links -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-left">
+        <p>Snazzy Paws Grooming</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Twitter link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <p>Phone: 0800 SNAZZY PAWS</p>
+        <p>Email: info@snazzypaws.com</p>
+      </div>
+      <div class="footer-right">
+        <p>Open: Monday - Saturday | 9am - 5pm</p>
+        <p>Closed: Sundays</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT SECTION: Handles the menu toggle functionality -->
+    <script>
+      // When the hamburger icon is clicked, toggle the display of the nav menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
