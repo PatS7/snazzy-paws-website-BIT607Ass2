@@ -736,6 +736,14 @@
     gap: 2rem;
     padding: 1rem;
   }
+
+  .service-description {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #353535; 
+  }
   
   .service-selection,
   .your-booking {
