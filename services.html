@@ -1,454 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snazzy Paws Grooming - Services Page</title>
-
-  <!-- Bootstrap 5 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/styles.css">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
-    
-<body>
-  <!-- Navbar (Bootstrap + Custom) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Snazzy Paws</a>
-      <button class="navbar-toggler" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#nav-links"
-              aria-controls="nav-links"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="nav-links">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="bookings.html">Book</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-
-  <!-- Hero Section -->
-  <section class="hero py-5 px-3 mt-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Column 1 (Heading & Desktop Button) -->
-        <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
-          <h1 class="text-center mb-3">Snazzy Paws<br>Grooming Services</h1>
-          <button class="btn btn-primary d-none d-md-inline-block">Book Now</button>
-        </div>
-        <!-- Column 2 (Image) -->
-        <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
-          <img src="./images/services/services-hero.jpg" alt="terrier-with-grooming-in-progress" class="img-fluid rounded">
-        </div>
-        <!-- Column 3 (Mobile Button) -->
-        <div class="col-12 order-3 d-md-none text-center">
-          <button class="btn btn-primary mt-3">Book Now</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive grooming services at Snazzy Paws Grooming, featuring grooming essentials, packages, and specialty treatments tailored for your pet.">
+    <title>Snazzy Paws Grooming - Services Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar (Bootstrap + Custom) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Snazzy Paws</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-links">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookings.html">Book</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <hr class="section-divider my-5">
-
-  <!-- GROOMING ESSENTIALS TABLE -->
-  <section class="container py-5">
-    <h2 class="text-center">Grooming Essentials</h2>
-    <p class="text-center">
-      Keep your furry friend fresh and tidy with our essential grooming services.
-    </p>
-
-    <div class="row align-items-stretch justify-content-center my-4">
-      <!-- Left Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-
-      <!-- Essentials Table (center column) -->
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="table-responsive w-100">
-          <table class="table table-striped mb-0">
-            <tbody>
-              <tr>
-                <td>
-                  <h4>Bath and Brush</h4>
-                  <p>Shampoo, blow dry, brush out, nail trim</p>
-                </td>
-                <td class="text-end fw-bold">$25-$50</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Haircut</h4>
-                  <p>Bath, blow dry, haircut</p>
-                </td>
-                <td class="text-end fw-bold">$45-$85</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Nail Trim</h4>
-                  <p>Trim nails and, in some cases, filing.</p>
-                </td>
-                <td class="text-end fw-bold">$10-$20</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Ear Cleaning</h4>
-                  <p>Gentle cleaning of ears to remove wax and debris.</p>
-                </td>
-                <td class="text-end fw-bold">$10-$15</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Teeth Brushing</h4>
-                  <p>Brushing with pet-safe toothpaste</p>
-                </td>
-                <td class="text-end fw-bold">$10-$15</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Right Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-    </div>
-
-    <!-- Button Group -->
-    <div class="d-flex justify-content-center gap-3 mt-4">
-      <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Book an Appointment
-      </a>
-      <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Contact Us
-      </a>
-    </div>
-  </section>
-
-
-
-  <hr class="section-divider my-5">
-
-  <!-- GROOMING PACKAGES SECTION: Table displaying package deals -->
-  <section class="container py-5">
-    <h2 class="text-center">Grooming Packages</h2>
-    <p class="text-center">
-      Comprehensive bundles for the ultimate grooming experience.
-    </p>
-
-    <div class="row align-items-stretch justify-content-center my-4">
-      <!-- Left Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-
-      <!-- Packages Table (center column) -->
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="table-responsive w-100">
-          <table class="table table-striped mb-0">
-            <tbody>
-              <tr>
-                <td>
-                  <h4>Spa Package</h4>
-                  <p>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</p>
-                </td>
-                <td class="text-end fw-bold">$75-$150</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Puppy Package</h4>
-                  <p>Introductory grooming services tailored for puppies.</p>
-                </td>
-                <td class="text-end fw-bold">$45-$85</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Senior Dog Package</h4>
-                  <p>Grooming services tailored for older dogs, often with special handling and care.</p>
-                </td>
-                <td class="text-end fw-bold">$40-$80</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Full Grooming Package</h4>
-                  <p>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</p>
-                </td>
-                <td class="text-end fw-bold">$60-$120</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Express Service Package</h4>
-                  <p>For dogs that need minimal grooming or a quick touch-up.</p>
-                </td>
-                <td class="text-end fw-bold">$15-$25</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Right Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-md-0 me-3" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-    </div>
-
-    <!-- Button Group -->
-    <div class="d-flex justify-content-center gap-3 mt-4">
-      <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Book an Appointment
-      </a>
-      <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Contact Us
-      </a>
-    </div>
-  </section>
-
-
-  <hr class="section-divider my-5">
-
-  <!-- SPECIALTY TREATMENTS SECTION: Table with specialty service details -->
-  <section class="container py-5">
-    <h2 class="text-center">Specialty Treatments</h2>
-    <p class="text-center">
-      Tailored for your dog's unique grooming and health needs.
-    </p>
-
-    <div class="row align-items-stretch justify-content-center my-4">
-      <!-- Left Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-
-      <!-- Specialty Treatments Table (center column) -->
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="table-responsive w-100">
-          <table class="table table-striped mb-0">
-            <tbody>
-              <tr>
-                <td>
-                  <h4>De-Shedding Treatment</h4>
-                  <p>Special shampoo and undercoat removal. (In addition to bath or haircut)</p>
-                </td>
-                <td class="text-end fw-bold">$20-$40</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Flea and Tick Treatment</h4>
-                  <p>Shampoo and preventative treatment.</p>
-                </td>
-                <td class="text-end fw-bold">$15-$30</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Medicated Bath</h4>
-                  <p>For pets with skin conditions requiring special shampoo. Price in addition to regular bath.</p>
-                </td>
-                <td class="text-end fw-bold">$20-$40</td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Special-Breed Cuts</h4>
-                  <p>Breed-specific cuts or styling based on customer preference.</p>
-                </td>
-                <td class="text-end fw-bold">Varies - quoted after consultation</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Right Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-md-0 me-3" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-    </div>
-
-    <!-- Button Group -->
-    <div class="d-flex justify-content-center gap-3 mt-4">
-      <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Book an Appointment
-      </a>
-      <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Contact Us
-      </a>
-    </div>
-  </section>
-
-
-  <hr class="section-divider my-5">
-
-  <!-- DOG HEALTH AND WELLBEING SECTION: Information on pet health with images -->
-  <section class="container py-5">
-    <h2 class="text-center">Dog Health and Wellbeing</h2>
-    <div class="row align-items-center justify-content-center my-4">
-      <!-- Left Column -->
-      <div class="col-md-5 text-center">
-        <img src="./images/services/Services_DogHealth.jpg" alt="Dog Health Tips" class="img-fluid rounded mb-3" style="width:300px; height:350px; object-fit:cover;">
-        <h4>Tips</h4>
-        <p>Best grooming practices for a healthy coat.</p>
-      </div>
-      <!-- Vertical Divider (visible on md and up) -->
-      <div class="col-md-1 d-none d-md-flex justify-content-center">
-        <div style="width:2px; background-color:#ccc; height:100%; min-height:200px;"></div>
-      </div>
-      <!-- Right Column -->
-      <div class="col-md-5 text-center">
-        <img src="./images/services/Services_DogCare.jpg" alt="Health and Wellness" class="img-fluid rounded mb-3" style="width:300px; height:350px; object-fit:cover;">
-        <h4>Health and Wellness</h4>
-        <p>Nutrition, hydration, and regular grooming tips.</p>
-      </div>
-    </div>
-    <div class="text-center">
-      <a href="contact.html" class="btn btn-primary">Contact Us</a>
-    </div>
-    <p class="text-center info-text mt-3">For more info or to book</p>
-  </section>
-
-  <hr class="section-divider my-5">
-    
-  <!-- FAQs SECTION: Frequently Asked Questions in a table layout -->
-  <section class="container py-5">
-    <h2 class="text-center">Frequently Asked Questions</h2>
-    <p class="text-center">
-      Tailored for your dog's unique grooming and health needs.
-    </p>
-
-    <div class="row align-items-stretch justify-content-center my-4">
-      <!-- Left Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-
-      <!-- FAQs Table (center column) -->
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="table-responsive w-100">
-          <table class="table table-striped mb-0">
-            <tbody>
-              <tr>
-                <td>
-                  <h4>What are your opening hours?</h4>
-                  <p>We are open from Monday to Saturday from 9am-5pm.</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Can I make a booking online?</h4>
-                  <p>Yes! You can book your appointment via our booking page.</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Do you offer treatments for skin conditions?</h4>
-                  <p>Yes, we provide medicated baths for pets with skin conditions priced at $20-$40. This is in addition to a standard bath treatment.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Right Images -->
-      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
-        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
-      </div>
-    </div>
-
-    <!-- Button Group -->
-    <div class="d-flex justify-content-center gap-3 mt-4">
-      <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Book an Appointment
-      </a>
-      <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
-        Contact Us
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer  -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row justify-content-between align-items-center text-center text-md-start">
-        <!-- Left Column: Business Name + Social Icons -->
-        <div class="col-md-auto mb-3 mb-md-0">
-          <p class="fs-5 mb-2">Snazzy Paws Grooming</p>
-          <div class="d-flex gap-2 justify-content-center justify-content-md-start">
-            <a href="#" aria-label="Facebook link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="Instagram link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" aria-label="Twitter link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
-              <i class="fab fa-twitter"></i>
-            </a>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero py-5 px-3 mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
+              <h1 class="text-center mb-3">Snazzy Paws<br>Grooming Services</h1>
+              <button class="btn btn-primary d-none d-md-inline-block">Book Now</button>
+            </div>
+            <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
+              <img src="./images/services/services-hero.jpg" alt="terrier-with-grooming-in-progress" class="img-fluid rounded">
+            </div>
+            <div class="col-12 order-3 d-md-none text-center">
+              <button class="btn btn-primary mt-3">Book Now</button>
+            </div>
           </div>
         </div>
-        <!-- Center Column: Contact Info & Additional Links -->
-        <div class="col-md-auto mb-3 mb-md-0">
-          <p class="mb-1">Phone: 0800 SNAZZYPAWS</p>
-          <p class="mb-0">Email: info@snazzypaws.com</p>
+      </section>
+
+      <hr class="section-divider my-5">
+
+      <!-- GROOMING ESSENTIALS TABLE -->
+      <section class="container py-5">
+        <h2 class="text-center">Grooming Essentials</h2>
+        <p class="text-center">
+          Keep your furry friend fresh and tidy with our essential grooming services.
+        </p>
+        <div class="row align-items-stretch justify-content-center my-4">
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="table-responsive w-100">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h4>Bath and Brush</h4>
+                      <p>Shampoo, blow dry, brush out, nail trim</p>
+                    </td>
+                    <td class="text-end fw-bold">$25-$50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Haircut</h4>
+                      <p>Bath, blow dry, haircut</p>
+                    </td>
+                    <td class="text-end fw-bold">$45-$85</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Nail Trim</h4>
+                      <p>Trim nails and, in some cases, filing.</p>
+                    </td>
+                    <td class="text-end fw-bold">$10-$20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Ear Cleaning</h4>
+                      <p>Gentle cleaning of ears to remove wax and debris.</p>
+                    </td>
+                    <td class="text-end fw-bold">$10-$15</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Teeth Brushing</h4>
+                      <p>Brushing with pet-safe toothpaste</p>
+                    </td>
+                    <td class="text-end fw-bold">$10-$15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-md-0 me-3" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
         </div>
-        <!-- Right Column: Hours Info -->
-        <div class="col-md-auto">
-          <p class="mb-1">Open: Monday - Saturday | 9am - 5pm</p>
-          <p class="mb-0">Closed: Sundays</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Book an Appointment</a>
+          <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Contact Us</a>
+        </div>
+      </section>
+
+      <hr class="section-divider my-5">
+
+      <!-- GROOMING PACKAGES SECTION -->
+      <section class="container py-5">
+        <h2 class="text-center">Grooming Packages</h2>
+        <p class="text-center">
+          Comprehensive bundles for the ultimate grooming experience.
+        </p>
+        <div class="row align-items-stretch justify-content-center my-4">
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="table-responsive w-100">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h4>Spa Package</h4>
+                      <p>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</p>
+                    </td>
+                    <td class="text-end fw-bold">$75-$150</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Puppy Package</h4>
+                      <p>Introductory grooming services tailored for puppies.</p>
+                    </td>
+                    <td class="text-end fw-bold">$45-$85</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Senior Dog Package</h4>
+                      <p>Grooming services tailored for older dogs, often with special handling and care.</p>
+                    </td>
+                    <td class="text-end fw-bold">$40-$80</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Full Grooming Package</h4>
+                      <p>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</p>
+                    </td>
+                    <td class="text-end fw-bold">$60-$120</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Express Service Package</h4>
+                      <p>For dogs that need minimal grooming or a quick touch-up.</p>
+                    </td>
+                    <td class="text-end fw-bold">$15-$25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-md-0 me-3" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Book an Appointment</a>
+          <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Contact Us</a>
+        </div>
+      </section>
+
+      <hr class="section-divider my-5">
+
+      <!-- SPECIALTY TREATMENTS SECTION -->
+      <section class="container py-5">
+        <h2 class="text-center">Specialty Treatments</h2>
+        <p class="text-center">
+          Tailored for your dog's unique grooming and health needs.
+        </p>
+        <div class="row align-items-stretch justify-content-center my-4">
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="table-responsive w-100">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h4>De-Shedding Treatment</h4>
+                      <p>Special shampoo and undercoat removal. (In addition to bath or haircut)</p>
+                    </td>
+                    <td class="text-end fw-bold">$20-$40</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Flea and Tick Treatment</h4>
+                      <p>Shampoo and preventative treatment.</p>
+                    </td>
+                    <td class="text-end fw-bold">$15-$30</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Medicated Bath</h4>
+                      <p>For pets with skin conditions requiring special shampoo. Price in addition to regular bath.</p>
+                    </td>
+                    <td class="text-end fw-bold">$20-$40</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Special-Breed Cuts</h4>
+                      <p>Breed-specific cuts or styling based on customer preference.</p>
+                    </td>
+                    <td class="text-end fw-bold">Varies - quoted after consultation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-md-0 me-3" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Book an Appointment</a>
+          <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Contact Us</a>
+        </div>
+      </section>
+
+      <hr class="section-divider my-5">
+
+      <!-- DOG HEALTH AND WELLBEING SECTION -->
+      <section class="container py-5">
+        <h2 class="text-center">Dog Health and Wellbeing</h2>
+        <div class="row align-items-center justify-content-center my-4">
+          <div class="col-md-5 text-center">
+            <img src="./images/services/Services_DogHealth.jpg" alt="Dog Health Tips" class="img-fluid rounded mb-3" style="width:300px; height:350px; object-fit:cover;">
+            <h4>Tips</h4>
+            <p>Best grooming practices for a healthy coat.</p>
+          </div>
+          <div class="col-md-1 d-none d-md-flex justify-content-center">
+            <div style="width:2px; background-color:#ccc; height:100%; min-height:200px;"></div>
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="./images/services/Services_DogCare.jpg" alt="Health and Wellness" class="img-fluid rounded mb-3" style="width:300px; height:350px; object-fit:cover;">
+            <h4>Health and Wellness</h4>
+            <p>Nutrition, hydration, and regular grooming tips.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+        <p class="text-center info-text mt-3">For more info or to book</p>
+      </section>
+
+      <hr class="section-divider my-5">
+
+      <!-- FAQs SECTION -->
+      <section class="container py-5">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <p class="text-center">
+          Tailored for your dog's unique grooming and health needs.
+        </p>
+        <div class="row align-items-stretch justify-content-center my-4">
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="table-responsive w-100">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h4>What are your opening hours?</h4>
+                      <p>We are open from Monday to Saturday from 9am-5pm.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Can I make a booking online?</h4>
+                      <p>Yes! You can book your appointment via our booking page.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Do you offer treatments for skin conditions?</h4>
+                      <p>Yes, we provide medicated baths for pets with skin conditions priced at $20-$40. This is in addition to a standard bath treatment.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+            <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Book an Appointment</a>
+          <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">Contact Us</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row justify-content-between align-items-center text-center text-md-start">
+          <div class="col-md-auto mb-3 mb-md-0">
+            <p class="fs-5 mb-2">Snazzy Paws Grooming</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+              <a href="#" aria-label="Facebook link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="Instagram link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="Twitter link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-auto mb-3 mb-md-0">
+            <p class="mb-1">Phone: 0800 SNAZZYPAWS</p>
+            <p class="mb-0">Email: info@snazzypaws.com</p>
+            <p class="mb-0">
+              <a href="privacy-policy.html" class="text-white">Our Privacy Policy</a>
+              &nbsp;|&nbsp;
+              <a href="roster.html" class="text-white">Staff Roster</a>
+            </p>
+          </div>
+          <div class="col-md-auto">
+            <p class="mb-1">Open: Monday - Saturday | 9am - 5pm</p>
+            <p class="mb-0">Closed: Sundays</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-
-    <!-- JAVASCRIPT SECTION: Controls mobile menu and slideshow functionality -->
-    <script>
-      // Toggle the navigation menu when the hamburger icon is clicked
-      const menuToggle = document.getElementById("menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-

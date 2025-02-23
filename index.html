@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic head info and meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snazzy Paws Grooming</title>
-    <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
-<body>
+  </head>
 
-  <!-- Navbar (Bootstrap + Custom) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Snazzy Paws</a>
-      <button class="navbar-toggler" type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#nav-links" 
-        aria-controls="nav-links" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-      <div class="collapse navbar-collapse" id="nav-links">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="bookings.html">Book</a></li>
-        </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Snazzy Paws</a>
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-links"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-links">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookings.html">Book</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
     <main>
       <!-- Hero Section -->
       <section class="hero py-5 px-3 mt-5">
         <div class="container">
           <div class="row align-items-center">
-            <!-- Column 1 (Heading & Desktop Button) -->
             <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
               <h1 class="text-center mb-3">Welcome to<br>Snazzy Paws Grooming</h1>
               <button class="btn btn-primary d-none d-md-inline-block">Book Now</button>
             </div>
-            <!-- Column 2 (Image) -->
             <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
               <img src="./images/homepage/homepage-hero.jpg" alt="groomed-dogs-pink-background" class="img-fluid rounded">
             </div>
-            <!-- Column 3 (Mobile Button) -->
             <div class="col-12 order-3 d-md-none text-center">
               <button class="btn btn-primary mt-3">Book Now</button>
             </div>
@@ -61,229 +62,193 @@
         </div>
       </section>
 
+      <hr class="section-divider my-5">
+
+      <!-- SERVICES SECTION: An overview of the salon grooming services -->
+      <section class="services container text-center py-5">
+        <h2 class="mb-4">Our Services</h2>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3" style="background-color: #f4f4f4; border: 1px solid #ddd;">
+              <div class="card-body text-center">
+                <img src="./images/homepage/homepage-grooming-essentials.svg" class="img-fluid w-75 w-md-100 mb-3" alt="Grooming Essentials Icon" style="max-width: 150px; height: auto;">
+                <h3 class="card-title mb-2">Grooming Essentials</h3>
+                <p class="card-text mb-3">Keep your furry friend fresh and tidy with our essential grooming services.</p>
+                <a href="services.html" class="btn btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3" style="background-color: #f4f4f4; border: 1px solid #ddd;">
+              <div class="card-body text-center">
+                <img src="./images/homepage/Homepage_SpeacialtyCareIcon.svg" class="img-fluid w-75 w-md-100 mb-3" alt="Special Care Icon" style="max-width: 150px; height: auto;">
+                <h3 class="card-title mb-2">Specialty Treatments</h3>
+                <p class="card-text mb-3">Tailored care for your dog's unique grooming and health needs.</p>
+                <a href="services.html" class="btn btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3" style="background-color: #f4f4f4; border: 1px solid #ddd;">
+              <div class="card-body text-center">
+                <img src="./images/homepage/Homepage_GroomingPackagesIcon.svg" class="img-fluid w-75 w-md-100 mb-3" alt="Grooming Packages Icon" style="max-width: 150px; height: auto;">
+                <h3 class="card-title mb-2">Grooming Packages</h3>
+                <p class="card-text mb-3">Comprehensive bundles for the ultimate dog grooming experience.</p>
+                <a href="services.html" class="btn btn-primary mt-2">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <hr class="section-divider my-5">
 
-    <!-- SERVICES SECTION: An overview of the salon grooming services -->
-    <section class="services container text-center py-5">
-      <h2 class="mb-4">Our Services</h2>
-      <div class="row justify-content-center g-4">
-
-        <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3" style="background-color: #f4f4f4; border: 1px solid #ddd;">
-            <div class="card-body text-center">
-              <img src="./images/homepage/homepage-grooming-essentials.svg" class="img-fluid w-75 w-md-100 mb-3" alt="Grooming Essentials Icon" style="max-width: 150px; height: auto;">
-              <h3 class="card-title mb-2">Grooming Essentials</h3>
-              <p class="card-text mb-3">Keep your furry friend fresh and tidy with our essential grooming services.</p>
-              <a href="services.html" class="btn btn-primary mt-2">Learn More</a>
+      <!-- HAPPY CUSTOMERS SECTION: Bootstrap Carousel -->
+      <section class="happy-customers container my-5 text-center">
+        <h2 class="section-title mb-4">Happy Customers</h2>
+        <div id="happyCustomersCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="before-after d-flex justify-content-center align-items-center mb-3">
+                <div class="before text-center">
+                  <h4>Before</h4>
+                  <div class="aspect-container">
+                    <img src="./images/gallery/Pre_Groom1.jpg" alt="Before Groom">
+                  </div>
+                </div>
+                <div class="after text-center">
+                  <h4>After</h4>
+                  <div class="aspect-container">
+                    <img src="./images/gallery/Post_Groom1.jpg" alt="After Groom">
+                  </div>
+                </div>
+              </div>
+              <blockquote class="fst-italic">"Best grooming service ever!"</blockquote>
+              <p>– Bella</p>
             </div>
+            <div class="carousel-item">
+              <div class="before-after d-flex justify-content-center align-items-center mb-3">
+                <div class="before text-center">
+                  <h4>Before</h4>
+                  <div class="aspect-container">
+                    <img src="./images/gallery/Pre_Groom3.jpg" alt="Before Groom">
+                  </div>
+                </div>
+                <div class="after text-center">
+                  <h4>After</h4>
+                  <div class="aspect-container">
+                    <img src="./images/gallery/Post_Groom3.jpg" alt="After Groom">
+                  </div>
+                </div>
+              </div>
+              <blockquote class="fst-italic">"Fantastic service and friendly staff!"</blockquote>
+              <p>– Max</p>
+            </div>
+            <div class="carousel-item">
+              <div class="before-after d-flex justify-content-center align-items-center mb-3">
+                <div class="before text-center">
+                  <h4>Before</h4>
+                  <div class="aspect-container">
+                    <img src="./images/gallery/Pre_Groom4.jpg" alt="Before Groom">
+                  </div>
+                </div>
+                <div class="after text-center">
+                  <h4>After</h4>
+                  <div class="aspect-container">
+                    <img src="./images/gallery/Post_Groom4.jpg" alt="After Groom">
+                  </div>
+                </div>
+              </div>
+              <blockquote class="fst-italic">"My dog has never looked better!"</blockquote>
+              <p>– Charlie</p>
+            </div>
+          </div>
+          <div class="carousel-arrows mt-3">
+            <button class="carousel-control-prev me-3" type="button"
+              data-bs-target="#happyCustomersCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next ms-3" type="button"
+              data-bs-target="#happyCustomersCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
+      </section>
 
-        <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3" style="background-color: #f4f4f4; border: 1px solid #ddd;">
-            <div class="card-body text-center">
-              <img src="./images/homepage/Homepage_SpeacialtyCareIcon.svg" class="img-fluid w-75 w-md-100 mb-3" alt="Special Care Icon" style="max-width: 150px; height: auto;">
-              <h3 class="card-title mb-2">Specialty Treatments</h3>
-              <p class="card-text mb-3">Tailored care for your dog's unique grooming and health needs.</p>
-              <a href="services.html" class="btn btn-primary mt-2">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3" style="background-color: #f4f4f4; border: 1px solid #ddd;">
-            <div class="card-body text-center">
-              <img src="./images/homepage/Homepage_GroomingPackagesIcon.svg" class="img-fluid w-75 w-md-100 mb-3" alt="Grooming Packages Icon" style="max-width: 150px; height: auto;">
-              <h3 class="card-title mb-2">Grooming Packages</h3>
-              <p class="card-text mb-3">Comprehensive bundles for the ultimate dog grooming experience.</p>
-              <a href="services.html" class="btn btn-primary mt-2">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <hr class="section-divider my-5">
-
-    <!-- HAPPY CUSTOMERS SECTION: Bootstrap Carousel -->
-    <section class="happy-customers container my-5 text-center">
-      <h2 class="section-title mb-4">Happy Customers</h2>
-
-      <div id="happyCustomersCarousel" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Carousel inner -->
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="before-after d-flex justify-content-center align-items-center mb-3">
-              <div class="before text-center">
-                <h4>Before</h4>
-                <div class="aspect-container">
-                  <img src="./images/gallery/Pre_Groom1.jpg" alt="Before Groom">
-                </div>
-              </div>
-              <div class="after text-center">
-                <h4>After</h4>
-                <div class="aspect-container">
-                  <img src="./images/gallery/Post_Groom1.jpg" alt="After Groom">
-                </div>
-              </div>
-            </div>
-            <blockquote class="fst-italic">"Best grooming service ever!"</blockquote>
-            <p>– Bella</p>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="before-after d-flex justify-content-center align-items-center mb-3">
-              <div class="before text-center">
-                <h4>Before</h4>
-                <div class="aspect-container">
-                  <img src="./images/gallery/Pre_Groom3.jpg" alt="Before Groom">
-                </div>
-              </div>
-              <div class="after text-center">
-                <h4>After</h4>
-                <div class="aspect-container">
-                  <img src="./images/gallery/Post_Groom3.jpg" alt="After Groom">
-                </div>
-              </div>
-            </div>
-            <blockquote class="fst-italic">"Fantastic service and friendly staff!"</blockquote>
-            <p>– Max</p>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="before-after d-flex justify-content-center align-items-center mb-3">
-              <div class="before text-center">
-                <h4>Before</h4>
-                <div class="aspect-container">
-                  <img src="./images/gallery/Pre_Groom4.jpg" alt="Before Groom">
-                </div>
-              </div>
-              <div class="after text-center">
-                <h4>After</h4>
-                <div class="aspect-container">
-                  <img src="./images/gallery/Post_Groom4.jpg" alt="After Groom">
-                </div>
-              </div>
-            </div>
-            <blockquote class="fst-italic">"My dog has never looked better!"</blockquote>
-            <p>– Charlie</p>
-          </div>
-        </div>
-        <!-- End .carousel-inner -->
-
-          <!-- NEW: Arrows placed BELOW the text/blockquote, in normal flow -->
-      <div class="carousel-arrows mt-3">
-        <button class="carousel-control-prev me-3" type="button"
-                data-bs-target="#happyCustomersCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next ms-3" type="button"
-                data-bs-target="#happyCustomersCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-      </div>
-      <!-- End .carousel -->
-
-
-    </section>
-        
       <hr class="section-divider my-5">
 
       <!-- Our Story -->
       <section class="our-story container">
         <div class="row align-items-center">
-          <!-- Image Column -->
           <div class="col-12 col-md-6 mb-4 mb-md-0">
             <img src="./images/homepage/Dog_Groomers_Home_OurStory.jpg" class="img-fluid rounded" alt="Our Story">
           </div>
-          <!-- Text Column -->
           <div class="col-12 col-md-6 text-center text-md-start">
             <h2>Our Story</h2>
             <p>
-              Snazzy Paws Grooming was an idea between two friends, Sarah and Ashley, who bonded over their love of dogs after meeting at puppy training school. 
+              Snazzy Paws Grooming was an idea between two friends, Sarah and Ashley, who bonded over their love of dogs after meeting at puppy training school.
               With a shared passion for pet care and grooming, they decided to turn their dream into a reality and opened the doors to their salon in 2024.
               <br><br>
-              Here at Snazzy Paws Grooming, we are a family and welcome you to join us. Whether your pup needs a fresh trim, a relaxing bath, 
+              Here at Snazzy Paws Grooming, we are a family and welcome you to join us. Whether your pup needs a fresh trim, a relaxing bath,
               or a little extra pampering, we treat every dog as if they were our own. Your furry friend deserves the best—because snazzy dogs are happy dogs!
             </p>
           </div>
         </div>
       </section>
 
-  <hr class="section-divider my-5">
+      <hr class="section-divider my-5">
 
-    <!-- DETAILS SECTION: Contact information & Storefront photo-->
-    <section class="container text-center">
-      <div class="row align-items-center" style="min-height: 400px;">
-        <div class="col-md-6">
-          <img src="./images/homepage/Storefront_home.jpg" class="img-fluid rounded" alt="Storefront">
-          <p>Looking forward to welcoming you in!</p>
-        </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-          <h2>Contact Us</h2>
-          <p>Hours: 9 AM - 5 PM</p>
-          <p>Phone: 0800 SNAZZYPAWS</p>
-          <p>Email: info@snazzypaws.com</p>
-          <button class="btn btn-primary">Get in Touch</button>
-        </div>
-      </div>
-    </section>
-
-    </main>
-
-  
-
-  <!-- Footer  -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row justify-content-between align-items-center text-center text-md-start">
-        <!-- Left Column: Business Name + Social Icons -->
-        <div class="col-md-auto mb-3 mb-md-0">
-          <p class="fs-5 mb-2">Snazzy Paws Grooming</p>
-          <div class="d-flex gap-2 justify-content-center justify-content-md-start">
-            <a href="#" aria-label="Facebook link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="Instagram link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" aria-label="Twitter link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
-              <i class="fab fa-twitter"></i>
-            </a>
+      <!-- DETAILS SECTION: Contact information & Storefront photo-->
+      <section class="container text-center">
+        <div class="row align-items-center" style="min-height: 400px;">
+          <div class="col-md-6">
+            <img src="./images/homepage/Storefront_home.jpg" class="img-fluid rounded" alt="Storefront">
+            <p>Looking forward to welcoming you in!</p>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <h2>Contact Us</h2>
+            <p>Hours: 9 AM - 5 PM</p>
+            <p>Phone: 0800 SNAZZYPAWS</p>
+            <p>Email: info@snazzypaws.com</p>
+            <button class="btn btn-primary">Get in Touch</button>
           </div>
         </div>
-        <!-- Center Column: Contact Info & Additional Links -->
-        <div class="col-md-auto mb-3 mb-md-0">
-          <p class="mb-1">Phone: 0800 SNAZZYPAWS</p>
-          <p class="mb-0">Email: info@snazzypaws.com</p>
-        </div>
-        <!-- Right Column: Hours Info -->
-        <div class="col-md-auto">
-          <p class="mb-1">Open: Monday - Saturday | 9am - 5pm</p>
-          <p class="mb-0">Closed: Sundays</p>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row justify-content-between align-items-center text-center text-md-start">
+          <div class="col-md-auto mb-3 mb-md-0">
+            <p class="fs-5 mb-2">Snazzy Paws Grooming</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+              <a href="#" aria-label="Facebook link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="Instagram link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="Twitter link" class="btn btn-light text-dark rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 40px; height: 40px;">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-auto mb-3 mb-md-0">
+            <p class="mb-1">Phone: 0800 SNAZZYPAWS</p>
+            <p class="mb-0">Email: info@snazzypaws.com</p>
+          </div>
+          <div class="col-md-auto">
+            <p class="mb-1">Open: Monday - Saturday | 9am - 5pm</p>
+            <p class="mb-0">Closed: Sundays</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-
-
-        
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
