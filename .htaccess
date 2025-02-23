@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile C:\Users\PW\OneDrive\Desktop\BIT607Ass2_PWine5063052_Website/.htpasswd
+Require valid-user
