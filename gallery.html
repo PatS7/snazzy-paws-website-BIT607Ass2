@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our gallery at Snazzy Paws Grooming to see our amazing grooming transformations, explore our state of the art facilities and meet our experienced team and .">
   <title>Snazzy Paws Grooming</title>
 
   <!-- Bootstrap 5 CSS -->
@@ -49,28 +50,29 @@
     </div>
   </nav>
 
-    <!-- HERO SECTION: Header area for the Gallery page -->
-      <section class="hero py-5 px-3 mt-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Column 1 (Heading & Desktop Button) -->
-            <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
-              <h1 class="text-center mb-3">Snazzy Paws Grooming<br>Gallery</h1>
-              <button class="btn btn-primary d-none d-md-inline-block">Book Now</button>
-            </div>
-            <!-- Column 2 (Image) -->
-            <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
-              <img src="./images/gallery/gallery-hero.jpg" alt="woman-with-white-groomed-dog-yellow-background" class="img-fluid rounded">
-            </div>
-            <!-- Column 3 (Mobile Button) -->
-            <div class="col-12 order-3 d-md-none text-center">
-              <button class="btn btn-primary mt-3">Book Now</button>
-            </div>
-          </div>
+  <!-- Hero Section -->
+  <section class="hero py-5 px-3 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Column 1 (Heading & Desktop Button) -->
+        <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
+          <h1 class="text-center mb-3">Snazzy Paws Grooming<br>Gallery</h1>
+          <button class="btn btn-primary d-none d-md-inline-block">Book Now</button>
         </div>
-      </section>
+        <!-- Column 2 (Image) -->
+        <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
+          <img src="./images/gallery/gallery-hero.jpg" alt="woman-with-white-groomed-dog-yellow-background" class="img-fluid rounded">
+        </div>
+        <!-- Column 3 (Mobile Button) -->
+        <div class="col-12 order-3 d-md-none text-center">
+          <button class="btn btn-primary mt-3">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <hr class="section-divider my-5">
+  <hr class="section-divider my-5">
+
 
   <!-- OUR WORK: A slideshow of our grooming work/testimonials (Bootstrap Carousel) -->
   <section class="our-work container my-5 text-center">
@@ -139,7 +141,7 @@
       </div>
       <!-- End .carousel-inner -->
 
-      <!-- Arrows placed below the text-->
+      <!-- NEW: Arrows placed BELOW the text/blockquote, in normal flow -->
       <div class="carousel-arrows mt-3">
         <button class="carousel-control-prev me-3" type="button"
                 data-bs-target="#happyCustomersCarousel" data-bs-slide="prev">
@@ -298,76 +300,74 @@
       <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
     </div>
   </section>
-    
-       <hr class="section-divider my-5">
-
-    
-
-    <!-- VIDEO SECTION: Displays a video of a grooming session -->
-    <section class="services">
-      <h2>Our Work</h2>
+ 
+  <!-- VIDEO SECTION: Displays a video of a grooming session -->
+  <section class="services-video">
+    <div class="container my-5 text-center">
+      <h2 class="section-title mb-4">Our Work</h2>
       <p>Watch Bella get treated to a spa package.</p>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/YpzjiS5M8V0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          title="Bella Spa Package"
-        ></iframe>
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.youtube.com/embed/YpzjiS5M8V0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen 
+          title="Bella Spa Package">
+        </iframe>
       </div>
-      <a href="services.html" class="btn-primary">See our services</a>
-    </section>
+      <a href="services.html" class="btn btn-primary mt-3">See our services</a>
+    </div>
+  </section>
 
-    <hr class="section-divider">
 
-    <!-- OUR PEOPLE SECTION: Introduces the team members -->
-    <section class="services">
-      <h2>Our People</h2>
-      <p>
+  <hr class="section-divider my-5">
+
+  <!-- OUR PEOPLE SECTION: Introduces the team members -->
+  <section class="our-people">
+    <div class="container my-5 text-center">
+      <h2 class="section-title mb-4">Our People</h2>
+      <p class="mb-5">
         Meet the Team: Dedicated, experienced, and passionate about your pet's
         well-being. Our groomers are here to make every visit special.
       </p>
-      <div class="our-people-grid">
-        <div>
-          <img
-            src="./images/gallery/Gallery_Employee_1.jpg"
-            alt="Worker One-Sarah"
-          >
+      <div class="row g-4">
+        <div class="col-12 col-md-6 text-center">
+          <div class="ratio ratio-1x1 mx-auto" style="max-width: 250px;">
+            <img src="./images/gallery/Gallery_Employee_1.jpg" alt="Worker One-Sarah" class="rounded-circle object-fit-cover w-100 h-100">
+          </div>
           <h3>Sarah</h3>
           <p>Lead Groomer</p>
           <p>Expert in pet grooming with 10+ years of experience.</p>
         </div>
-        <div>
-          <img
-            src="./images/gallery/Gallery_Employee_2.jpg"
-            alt="Worker Two-Brylie"
-          >
+        <div class="col-12 col-md-6 text-center">
+          <div class="ratio ratio-1x1 mx-auto" style="max-width: 250px;">
+            <img src="./images/gallery/Gallery_Employee_2.jpg" alt="Worker Two-Brylie" class="rounded-circle object-fit-cover w-100 h-100">
+          </div>
           <h3>Brylie</h3>
           <p>Assistant Groomer</p>
           <p>Passionate about making pets feel loved and pampered.</p>
         </div>
-        <div>
-          <img
-            src="./images/gallery/Gallery_Employee_3.jpg"
-            alt="Worker Three-Ashely"
-          >
+        <div class="col-12 col-md-6 text-center">
+          <div class="ratio ratio-1x1 mx-auto" style="max-width: 250px;">
+            <img src="./images/gallery/Gallery_Employee_3.jpg" alt="Worker Three-Ashely" class="rounded-circle object-fit-cover w-100 h-100">
+          </div>
           <h3>Ashley</h3>
           <p>Stylist</p>
           <p>Specializes in breed-specific cuts and creative styles.</p>
         </div>
-        <div>
-          <img
-            src="./images/gallery/Gallery_Employee_4.jpg"
-            alt="Worker Four-Sam"
-          >
+        <div class="col-12 col-md-6 text-center">
+          <div class="ratio ratio-1x1 mx-auto" style="max-width: 250px;">
+            <img src="./images/gallery/Gallery_Employee_4.jpg" alt="Worker Four-Sam" class="rounded-circle object-fit-cover w-100 h-100">
+          </div>
           <h3>Sam</h3>
           <p>Grooming Assistant</p>
           <p>Ensures every pet enjoys a relaxing and stress-free experience.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
- <!-- Footer  -->
+
+  <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="row justify-content-between align-items-center text-center text-md-start">
@@ -390,6 +390,11 @@
         <div class="col-md-auto mb-3 mb-md-0">
           <p class="mb-1">Phone: 0800 SNAZZYPAWS</p>
           <p class="mb-0">Email: info@snazzypaws.com</p>
+          <p class="mb-0">
+            <a href="privacy-policy.html" class="text-white">Our Privacy Policy</a>
+            &nbsp;|&nbsp;
+            <a href="roster.html" class="text-white">Staff Roster</a>
+          </p>
         </div>
         <!-- Right Column: Hours Info -->
         <div class="col-md-auto">
@@ -402,5 +407,6 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  
+</body>
 </html>
