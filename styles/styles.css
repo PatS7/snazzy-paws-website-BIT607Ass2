@@ -1,7 +1,66 @@
- 
-  /* ======================
-     Homepage Styles (index.html)
-     ====================== */
+  /* Client Testimonial Carousel */
+  .aspect-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 3 / 2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .aspect-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .before-after {
+    max-width: 800px;
+     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .before,
+  .after {
+    flex: 1;
+  }
+  
+  .carousel-inner {
+    overflow: visible;
+  }
+  
+  .carousel-inner .before-after {
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-arrows {
+    margin-bottom: 1.25rem;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static !important;
+    width: auto !important;
+    background: none;
+    display: inline-block !important;
+    vertical-align: middle;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .carousel-item {
+    position: relative;
+  }
 
   
   /* ======================
