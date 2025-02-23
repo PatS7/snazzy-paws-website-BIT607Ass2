@@ -222,32 +222,43 @@
       </div>
     </div>
 
-        <!-- RIGHT SIDE: Booking summary details -->
-        <aside class="your-booking">
-          <h3>Your Booking:</h3>
-          <ul id="booking-summary">
-            <li>
+    <!-- RIGHT SIDE: Booking Summary -->
+    <div class="col-md-6 d-flex">
+      <div class="card flex-fill">
+        <div class="card-header">
+          <h3 class="h5 mb-0">Your Booking</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group mb-3" id="booking-summary">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
               <span>🐾 Service Name</span>
               <span>$$$</span>
               <span>1 hr</span>
-              <button class="remove-item" aria-label="Remove Service">X</button>
+              <button class="btn btn-sm btn-danger" aria-label="Remove Service">X</button>
             </li>
-            <li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
               <span>🐾 Service Name</span>
               <span>$$$</span>
               <span>10 min</span>
-              <button class="remove-item" aria-label="Remove Service">X</button>
+              <button class="btn btn-sm btn-danger" aria-label="Remove Service">X</button>
             </li>
           </ul>
           <hr>
           <p>Total Cost: <span id="total-cost">$125</span></p>
           <p>Total Duration: <span id="total-duration">1 hr 10 mins</span></p>
-          <button class="btn-primary">Clear Booking</button>
-        </aside>
+          <button class="btn btn-primary w-100">Clear Booking</button>
+        </div>
+        <!-- End card-body -->
       </div>
-    </section>
+      <!-- End card -->
+    </div>
+    <!-- End col-md-6 -->
+  </div>
+  <!-- End row -->
+</section>
+    
+  <hr class="section-divider my-5">
 
-    <hr class="section-divider">
 
     <!-- DATE & TIME SECTION: Allows the user to pick a date and time -->
     <section class="date-time">

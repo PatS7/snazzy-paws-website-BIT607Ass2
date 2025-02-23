@@ -79,12 +79,7 @@
      Bookings Styles (bookings.html)
      ====================== */
   
-  .your-booking {
-    padding: 1rem;
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+
   
   .date-time {
     text-align: center;
