@@ -1,4 +1,6 @@
 AuthType Basic
 AuthName "Restricted Access"
 AuthUserFile C:\Users\PW\OneDrive\Desktop\BIT607Ass2_PWine5063052_Website/.htpasswd
+# Note: GitHub Pages doesn't process .htaccess files; this is for demonstration only. 
+On a live server, filepath to be updated.
 Require valid-user

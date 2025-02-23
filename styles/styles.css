@@ -62,9 +62,7 @@
     position: relative;
   }
 
-  /* ======================
-   Services.html
-   ====================== */
+  /* Service Table Colours*/
 
    .table-striped > tbody > tr:nth-of-type(odd) > td {
     background-color: #e6e6fa;
