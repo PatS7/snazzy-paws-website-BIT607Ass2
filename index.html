@@ -41,13 +41,23 @@
 
     <main>
       <!-- HERO SECTION: Welcome message and main image for the homepage -->
-      <section class="hero hero-homepage">
-        <div class="hero-left">
-          <h1>Welcome to Snazzy Paws Grooming</h1>
-          <a href="bookings.html" class="btn-primary">Book Now</a>
-        </div>
-        <div class="hero-image">
-          <img src="./images/homepage/homepage-hero.jpg" alt="groomed-dogs-pink-background">
+      <section class="hero py-5 px-3 mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Column 1 (Heading & Desktop Button) -->
+            <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
+              <h1 class="text-center mb-3">Contact Us at<br>Snazzy Paws Grooming</h1>
+              <button class="btn btn-primary d-none d-md-inline-block">Book Now</button>
+            </div>
+            <!-- Column 2 (Image) -->
+            <div class="col-12 col-md-6 order-2 order-md-2 d-flex justify-content-center">
+              <img src="./images/contact/contact-hero.jpg" alt="groomed-black-puppies-blue-background" class="img-fluid rounded">
+            </div>
+            <!-- Column 3 (Mobile Button) -->
+            <div class="col-12 order-3 d-md-none text-center">
+              <button class="btn btn-primary mt-3">Book Now</button>
+            </div>
+          </div>
         </div>
       </section>
 
