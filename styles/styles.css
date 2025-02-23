@@ -67,69 +67,6 @@
      Services Styles (services.html)
      ====================== */
 
-  .services-page-table {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .services-layout {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
-  }
-  
-  .service-images {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .service-images img {
-    max-width: 100px;
-    border-radius: 5px;
-  }
-  
-  .service-table {
-    width: 50%;
-    margin: 0 auto;
-    background: #f4f4f4;
-    border-collapse: collapse;
-    text-align: left;
-  }
-  
-  .service-table td {
-    padding: 0.5rem 0.75rem;
-    vertical-align: top;
-    display: table-cell;
-  }
-  
-  .price {
-    text-align: right;
-    font-weight: bold;
-  }
-  
-  .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .button-group button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 150px;
-    height: auto;
-    min-width: 120px;
-    max-width: 200px;
-    text-align: center;
-    line-height: normal;
-  }
   
   .btn-primary{
     display: inline-block;

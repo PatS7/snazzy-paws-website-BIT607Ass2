@@ -73,67 +73,86 @@
 
     <hr class="section-divider">
 
-    <!-- GROOMING ESSENTIALS SECTION: Table showing essential services and prices -->
-    <section class="services-page-table">
-      <h2 style="text-align: center;">Grooming Essentials</h2>
-      <p style="text-align: center;">
-        Keep your furry friend fresh and tidy with our essential grooming
-        services.
-      </p>
-      <div class="services-layout">
-        <div class="service-images">
-          <img src="./images/services/paw-print-blue.svg" alt="Paw print blue">
-          <img src="./images/services/paw-print-pink.svg" alt="Paw print pink">
-          <img src="./images/services/paw-print-blue.svg" alt="Paw print blue">
-        </div>
-        <table class="service-table">
-          <tr style="background-color: #f4f4f4;">
-            <td>
-              <h3>Bath and Brush</h3>
-              <p>Shampoo, blow dry, brush out, nail trim</p>
-            </td>
-            <td class="price">$25-$50</td>
-          </tr>
-          <tr style="background-color: #e6e6fa;">
-            <td>
-              <h3>Haircut</h3>
-              <p>Bath, blow dry, haircut</p>
-            </td>
-            <td class="price">$45-$85</td>
-          </tr>
-          <tr style="background-color: #f4f4f4;">
-            <td>
-              <h3>Nail  Trim</h3>
-              <p>Trim nails and, in some cases, filing.</p>
-            </td>
-            <td class="price">$10-$20</td>
-          </tr>
-          <tr style="background-color: #e6e6fa;">
-            <td>
-              <h3>Ear Cleaning</h3>
-              <p>Gentle cleaning of ears to remove wax and debris.</p>
-            </td>
-            <td class="price">$10-$15</td>
-          </tr>
-          <tr style="background-color: #f4f4f4;">
-            <td>
-              <h3>Teeth Brushing</h3>
-              <p>Brushing with  pet-safe toothpast</p>
-            </td>
-            <td class="price">$10-$15</td>
-          </tr>
-        </table>
-        <div class="service-images">
-          <img src="./images/services/paw-print-blue.svg" alt="Paw print blue">
-          <img src="./images/services/paw-print-pink.svg" alt="Paw print pink">
-          <img src="./images/services/paw-print-blue.svg" alt="Paw print blue">
+  <hr class="section-divider my-5">
+
+  <!-- GROOMING ESSENTIALS TABLE -->
+  <section class="container py-5">
+    <h2 class="text-center">Grooming Essentials</h2>
+    <p class="text-center">
+      Keep your furry friend fresh and tidy with our essential grooming services.
+    </p>
+
+    <div class="row align-items-stretch justify-content-center my-4">
+      <!-- Left Images -->
+      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-3 mt-md-0">
+        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
+      </div>
+
+      <!-- Essentials Table (center column) -->
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="table-responsive w-100">
+          <table class="table table-striped mb-0">
+            <tbody>
+              <tr>
+                <td>
+                  <h4>Bath and Brush</h4>
+                  <p>Shampoo, blow dry, brush out, nail trim</p>
+                </td>
+                <td class="text-end fw-bold">$25-$50</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Haircut</h4>
+                  <p>Bath, blow dry, haircut</p>
+                </td>
+                <td class="text-end fw-bold">$45-$85</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Nail Trim</h4>
+                  <p>Trim nails and, in some cases, filing.</p>
+                </td>
+                <td class="text-end fw-bold">$10-$20</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Ear Cleaning</h4>
+                  <p>Gentle cleaning of ears to remove wax and debris.</p>
+                </td>
+                <td class="text-end fw-bold">$10-$15</td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Teeth Brushing</h4>
+                  <p>Brushing with pet-safe toothpaste</p>
+                </td>
+                <td class="text-end fw-bold">$10-$15</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div class="button-group">
-        <a href="bookings.html" class="btn-primary">Book an Appointment</a>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+
+      <!-- Right Images -->
+      <div class="col-md-3 d-flex flex-row flex-md-column justify-content-center justify-content-md-between align-items-center flex-wrap mt-4 mt-md-0">
+        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+        <img src="./images/services/paw-print-pink.svg" alt="Paw print pink" class="mb-3 mb-md-0 me-3 me-md-0" style="max-width: 100px;">
+        <img src="./images/services/paw-print-blue.svg" alt="Paw print blue" style="max-width: 100px;">
       </div>
-    </section>
+    </div>
+
+    <!-- Button Group -->
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="bookings.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
+        Book an Appointment
+      </a>
+      <a href="contact.html" class="btn btn-primary px-4 py-2 d-flex align-items-center justify-content-center" style="width: 180px;">
+        Contact Us
+      </a>
+    </div>
+  </section>
 
     <hr class="section-divider">
 
