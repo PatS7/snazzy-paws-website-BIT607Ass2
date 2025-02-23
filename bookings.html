@@ -259,63 +259,93 @@
     
   <hr class="section-divider my-5">
 
+  <!-- DATE & TIME SECTION: Allows the user to pick a date and time -->
+<section class="date-time container my-4">
+  <h2 class="text-center mb-4">Select Date & Time</h2>
+  
+  <!-- Row for Calendar (left) and Time Picker (right) -->
+  <div class="row g-3 align-items-stretch">
 
-    <!-- DATE & TIME SECTION: Allows the user to pick a date and time -->
-    <section class="date-time">
-      <h2>Select Date & Time</h2>
-      <div class="date-time-container">
-        <!-- LEFT: Calendar Picker -->
-        <div class="calendar-picker">
-          <div class="calendar-header">
-            <button class="nav-button" aria-label="Previous Month">❮</button>
-            <span>Month | Year</span>
-            <button class="nav-button" aria-label="Next Month">❯</button>
-          </div>
-          <div class="calendar">
-            <p>Calendar</p>
-          </div>
+    <!-- LEFT: Calendar Picker -->
+    <div class="col-md-6 d-flex">
+      <div class="card flex-fill">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <button class="btn btn-sm btn-secondary nav-button" aria-label="Previous Month">❮</button>
+          <span class="fw-bold">Month | Year</span>
+          <button class="btn btn-sm btn-secondary nav-button" aria-label="Next Month">❯</button>
         </div>
-
-        <!-- RIGHT: Time Picker -->
-        <div class="time-picker">
-          <h3>Available Times:</h3>
-          <div class="time-options">
-            <label>
-              <input type="radio" name="time" value="10:00 AM">
-              10:00 AM
-            </label>
-            <label>
-              <input type="radio" name="time" value="10:15 AM">
-              10:15 AM
-            </label>
-            <label>
-              <input type="radio" name="time" value="10:30 AM">
-              10:30 AM
-            </label>
-            <label>
-              <input type="radio" name="time" value="12:00 PM">
-              12:00 PM
-            </label>
-            <label>
-              <input type="radio" name="time" value="1:15 PM">
-              1:15 PM
-            </label>
-            <label>
-              <input type="radio" name="time" value="1:45 PM">
-              1:45 PM
-            </label>
-            <label>
-              <input type="radio" name="time" value="3:15 PM">
-              3:15 PM
-            </label>
-            <label>
-              <input type="radio" name="time" value="3:30 PM">
-              3:30 PM
-            </label>
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <div class="calendar d-flex align-items-center justify-content-center">
+            <p class="mb-0">Calendar</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- RIGHT: Time Picker -->
+    <div class="col-md-6 d-flex">
+      <div class="card flex-fill">
+        <div class="card-header">
+          <h3 class="h5 text-center mb-0">Available Times</h3>
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <!-- 2-column layout for time options -->
+          <div class="row row-cols-2 g-2 time-options">
+            <!-- Each label is styled as a button-like block for clarity -->
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="10:00 AM" class="me-2">
+                10:00 AM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="10:15 AM" class="me-2">
+                10:15 AM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="10:30 AM" class="me-2">
+                10:30 AM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="12:00 PM" class="me-2">
+                12:00 PM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="1:15 PM" class="me-2">
+                1:15 PM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="1:45 PM" class="me-2">
+                1:45 PM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="3:15 PM" class="me-2">
+                3:15 PM
+              </label>
+            </div>
+            <div class="col">
+              <label class="w-100 btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <input type="radio" name="time" value="3:30 PM" class="me-2">
+                3:30 PM
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <hr class="section-divider">
 
