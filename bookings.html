@@ -347,63 +347,69 @@
   </div>
 </section>
 
-    <hr class="section-divider">
+<hr class="section-divider my-5">
 
-    <!-- CONFIRM DETAILS SECTION: Form for entering booking details -->
-    <section class="confirm-details">
-      <h2>Enter Your Details & Confirm</h2>
-      <div class="details-container">
-        <!-- LEFT: Owner and pet details -->
-        <div class="details-form">
-          <div class="form-group">
-            <label for="pet-name">Pet name:</label>
-            <input type="text" id="pet-name" placeholder="Enter pet name">
-          </div>
-          <div class="form-group">
-            <label for="owner-name">Owner name:</label>
-            <input type="text" id="owner-name" placeholder="Enter owner name">
-          </div>
-          <div class="form-group">
-            <label for="email">Owner email:</label>
-            <input type="email" id="email" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="phone">Owner phone:</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number">
-          </div>
+<!-- CONFIRM DETAILS SECTION: Form for entering booking details -->
+<section class="confirm-details container my-4">
+  <h2 class="text-center mb-4">Enter Your Details & Confirm</h2>
+  <form>
+    <div class="row g-4">
+      <!-- LEFT: Owner and pet details -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="pet-name" class="form-label">Pet Name:</label>
+          <input type="text" id="pet-name" class="form-control" placeholder="Enter pet name">
         </div>
-        <!-- RIGHT: Additional pet information -->
-        <div class="additional-notes">
-          <div class="form-group">
-            <label for="pet-age">Pet Age:</label>
-            <input type="text" id="pet-age" placeholder="Your pet's age">
-          </div>
-          <div class="form-group">
-            <label for="pet-breed">Pet Breed:</label>
-            <input type="text" id="pet-breed" placeholder="Your pet's breed">
-          </div>
-          <label for="notes">
-            Is there anything we should know about your pet? e.g. allergies, scared of hairdryer
+        <div class="mb-3">
+          <label for="owner-name" class="form-label">Owner Name:</label>
+          <input type="text" id="owner-name" class="form-control" placeholder="Enter owner name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Owner Email:</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Owner Phone:</label>
+          <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+        </div>
+      </div>
+      <!-- RIGHT: Additional pet information -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="pet-age" class="form-label">Pet Age:</label>
+          <input type="text" id="pet-age" class="form-control" placeholder="Your pet's age">
+        </div>
+        <div class="mb-3">
+          <label for="pet-breed" class="form-label">Pet Breed:</label>
+          <input type="text" id="pet-breed" class="form-control" placeholder="Your pet's breed">
+        </div>
+        <div class="mb-3">
+          <label for="notes" class="form-label">
+            Is there anything we should know about your pet? (e.g. allergies, scared of hairdryer)
           </label>
-          <textarea id="notes" placeholder="Additional information about your pet"></textarea>
+          <textarea id="notes" class="form-control" rows="4" placeholder="Additional information about your pet"></textarea>
         </div>
       </div>
+    </div>
+  </form>
 
-      <!-- APPOINTMENT SUMMARY: Displays the chosen services and appointment details -->
-      <div class="appointment-summary">
-        <h3>The appointment you’re booking is for:</h3>
-        <ul>
-          <li><span>🐾 Service name</span></li>
-          <li><span>🐾 Service name</span></li>
-        </ul>
-        <p>at 10.00am on the 3rd of July 2025</p>
-        <button class="btn-primary">Confirm</button>
-        <p class="cancellation-policy">
-          Cancellation Policy Cancellation Policy Cancellation Policy <br>
-          By confirming the appointment you are agreeing to these terms.
-        </p>
-      </div>
-    </section>
+  <!-- APPOINTMENT SUMMARY: Displays the chosen services and appointment details -->
+<div class="card appointment-summary text-center">
+  <div class="card-body">
+    <h3 class="card-title mb-3">The appointment you’re booking is for:</h3>
+    <ul class="list-unstyled mb-3">
+      <li>🐾 Service name</li>
+      <li>🐾 Service name</li>
+    </ul>
+    <p class="card-text mb-3">at 10.00am on the 3rd of July 2025</p>
+    <button class="btn btn-primary mb-3">Confirm</button>
+    <p class="cancellation-policy">
+      Cancellation Policy Cancellation Policy Cancellation Policy <br>
+      By confirming the appointment you are agreeing to these terms.
+    </p>
+  </div>
+</div>
+</section>
 
  <!-- Footer  -->
   <footer class="bg-dark text-white py-4">
